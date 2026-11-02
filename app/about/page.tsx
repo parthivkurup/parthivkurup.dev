@@ -10,16 +10,7 @@ export default function About() {
         <span className="text-mid">$</span> whoami
       </p>
       <h1 className="mt-3 text-2xl font-medium tracking-tight">{site.name}</h1>
-      <div className="mt-6 flex flex-col gap-4 text-[15px] leading-relaxed text-mid">
-        <p>
-          I build software in Melbourne, mostly to find out whether an idea holds up once it meets real data and real
-          people. Some of it ships. Some of it breaks in interesting ways first.
-        </p>
-        <p>
-          This site is where those things live: finished apps, small tools, experiments and work in progress, each
-          deployed on its own and listed here.
-        </p>
-      </div>
+      <p className="mt-6 text-[15px] leading-relaxed text-mid">gimme a job</p>
       <ul className="mt-8 flex gap-5 text-sm">
         {site.links.map((l) => (
           <li key={l.href}>
