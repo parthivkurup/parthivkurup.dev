@@ -20,7 +20,7 @@ export const projects: Project[] = [
     deploymentNote:
       "The scrapers and database run on my laptop. The public page is a static build that gets pushed to Cloudflare after each scrape and at midnight.",
     githubUrl: "https://github.com/parthivkurup/swirl",
-    lastUpdated: "2026-09-22",
+    lastUpdated: "2026-11-03",
     featured: true,
     overview: [
       "I wanted one place to see which froyo shops in Melbourne had a deal on today. Most of them only post promos on Instagram, so I built something that reads those posts for me. It's for me and a few friends.",
