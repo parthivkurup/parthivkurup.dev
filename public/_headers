@@ -1,0 +1,7 @@
+# Cloudflare Pages: the static export writes Open Graph cards with no file
+# extension, so Pages cannot infer their type. Crawlers reject anything that is
+# not served as an image.
+/opengraph-image
+  Content-Type: image/png
+/projects/*/opengraph-image
+  Content-Type: image/png

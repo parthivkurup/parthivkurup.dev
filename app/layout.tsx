@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: { default: site.title, template: `%s · ${site.wordmark}` },
   description: site.description,
   openGraph: { type: "website", siteName: site.title, description: site.description },
-  twitter: { card: "summary" },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = { themeColor: "#0a0a0a", colorScheme: "dark" };

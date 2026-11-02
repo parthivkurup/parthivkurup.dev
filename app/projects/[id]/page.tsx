@@ -22,7 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: p.name,
     description: p.description,
-    openGraph: { title: p.name, description: p.description, images: p.thumbnail ? [p.thumbnail] : undefined },
+    // The card image comes from opengraph-image.tsx beside this file.
+    openGraph: { title: p.name, description: p.description },
   };
 }
 
