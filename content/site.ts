@@ -20,8 +20,7 @@ export const site = {
   wordmark: "parthiv",
   name: "Parthiv Kurup",
   title: "Parthiv Kurup · projects",
-  intro: "A collection of things I've built, broken, tested and deployed.",
-  description:
-    "Things I've built, broken, tested and deployed. Apps, tools, experiments and half-finished ideas.",
+  intro: "Anything worth uploading or needing a UI is here",
+  description: "Projects I've built and put online. Some are finished, some aren't.",
   links: [{ label: "GitHub", href: "https://github.com/parthivkurup" }],
 };
