@@ -1,6 +1,18 @@
-# Cloudflare Pages: the static export writes Open Graph cards with no file
-# extension, so Pages cannot infer their type. Crawlers reject anything that is
-# not served as an image.
+# Cloudflare Pages response headers.
+
+# Pages must always revalidate HTML, so a deploy (or a deleted page) shows up
+# at once. Without this, responses carried s-maxage=604800 and an edge kept a
+# removed page for days after the deploy that deleted it.
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Hashed build assets never change under the same URL, so they can be kept.
+/_next/static/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# The static export writes Open Graph cards with no file extension, so Pages
+# cannot infer their type. Crawlers reject anything not served as an image.
 /opengraph-image
   Content-Type: image/png
 /projects/*/opengraph-image
